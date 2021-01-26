@@ -132,3 +132,80 @@ main {
     line-height: 1.8rem;
     color: var(--grey-new);
 }
+.currency-table, .comissions-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 1.6rem; */
+}
+.currency-table--title {
+    margin-top: 13px;
+    color: var(--bitcoin-orange);
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: bold;
+}
+.currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 15px;
+    /* background-color: #fff; */
+}
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currency-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.down {
+    display: inline-block;
+    height: 9px;
+    width: 12px;
+    margin-left: 10.5px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.up {
+    display: inline-block;
+    height: 9px;
+    width: 12px;
+    margin-left: 10.5px;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.currency-table--container .table-rigth {
+    color: var(--grey-new);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+.currency-table--date {
+    width: 80%;
+    min-width: 173px;
+    max-width: 290px;
+    height: 31px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+}
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
