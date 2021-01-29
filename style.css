@@ -249,6 +249,7 @@ main {
 }
 .main-product-detail {
     background-color: var(--warm-black);
+    padding-bottom: 47px;
 }
 .product-detail__batata-logo {
     display: inline-block;
