@@ -360,6 +360,7 @@ main {
   line-height: 2.6rem;
   font-weight: bold;
   margin-top: 60px;
+  color: var(--black);
 }
 .main-plans-container p {
     font-size: 1.4rem;
@@ -380,9 +381,10 @@ main {
 .plans-container--card {
   position: relative;
   width: 70%;
-  min-width: 190px;
-  max-width: 500px;
-  height: 250px;
+  min-width: 230px;
+  max-width: 300px;
+  scroll-snap-align: center;
+  height: 300px;
   margin: 50px auto;
   background-color: var(--just-white);
   border-radius: 8px;
@@ -404,15 +406,16 @@ main {
   left: calc((100% - 50%) / 2);
 }
 .plan-card {
-    padding-top: 24px;
+    padding-top: 40px;
     padding-bottom: 24px;
     width: 80%;
+    height: auto;
     margin: 0 auto;
 }
 .plan-card--title {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 .plan-card .plan-card--price {
     font-family: 'Inter', sans-serif;
@@ -421,12 +424,17 @@ main {
     font-weight: bold;
     color: #000;
 }
+.plan-card .plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+}
 .plan-card .plan-card--saving {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.5rem;
-  margin: 16px 0;
+  margin: 25px 0;
 }
 .plan-card--ca {
     width: 90%;
@@ -434,6 +442,7 @@ main {
     max-width: 280px;
     height: 48px;
     color: var(--warm-black);
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
