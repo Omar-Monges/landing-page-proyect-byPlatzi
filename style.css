@@ -134,12 +134,21 @@ main {
     line-height: 1.8rem;
     color: var(--grey-new);
 }
+.main__tables-container {
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin-top: 34px;
+}
 .currency-table, .comissions-table{
+    scroll-snap-type: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 25px;
     font-family: 'Inter', sans-serif;
     /* font-size: 1.6rem; */
 }
@@ -351,7 +360,7 @@ main {
 .main-plans-container {
   width: 100%;
   min-width: 320px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   text-align: center;
   background-color: var(--off-white);
 }
@@ -369,15 +378,14 @@ main {
     color: var(--grey-new);
     margin-top: 24px;
 }
-/* .plans-container--slider {
+.plans-container--slider {
     display: flex;
-    width: 100%;
-    height: 316px;
-    margin: 24px 0;
+    height: 370px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-} */
+    margin-top: 34px;
+}
 .plans-container--card {
   position: relative;
   width: 70%;
@@ -385,7 +393,7 @@ main {
   max-width: 300px;
   scroll-snap-align: center;
   height: 300px;
-  margin: 50px auto;
+  margin: 25px 15px;
   background-color: var(--just-white);
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -456,4 +464,33 @@ main {
     height: 20px;
     vertical-align: text-bottom;
     background-image: url('./assets/icons/orange-right-arrow.svg');
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+.right img {
+    width: 64px;
+    height: 50px;
 }
